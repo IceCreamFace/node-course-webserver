@@ -68,8 +68,13 @@ app.get('/about', (req, res) => {
 
 app.get('/bad', (req, res) => {
   res.send('Unable to finish request');
-});
+})
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTile: 'Project Page',
+  });
+});
 // Listen On Port 3000
 app.listen(port, () => {
   console.log(`server is up on port ${port}`);
