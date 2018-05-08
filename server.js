@@ -72,7 +72,7 @@ app.get('/bad', (req, res) => {
 
 app.get('/projects', (req, res) => {
   res.render('projects.hbs', {
-    pageTile: 'About Page',
+    pageTile: 'Projects Page',
   });
 });
 // Listen On Port 3000
